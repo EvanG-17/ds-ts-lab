@@ -100,3 +100,20 @@ const friend1: Friend = {
   
   console.log(findFriends(friends, (friend) => friend.name.startsWith('Pa')));
   console.log(findFriends(friends, (friend) => friend.age < 35));}
+
+
+  //function to add new interest for friend.
+  function addInterest(friend: Friend, newInterest: string): string[] {
+    if (!friend.interests) {
+      friend.interests = [];
+    }
+
+    //"pushes" the friends new interest to the array
+    friend.interests.push(newInterest);
+  
+
+    //returns intrests
+    return friend.interests;
+  }
+  console.log(addInterest(friends[0], 'Politics'))
+  console.log(addInterest(friends[1], 'Travel'));
