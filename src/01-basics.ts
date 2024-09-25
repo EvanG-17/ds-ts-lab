@@ -45,7 +45,7 @@ const friend1: Friend = {
       extension: 125,
     },
   };
-  export const colleagues = {
+  import {Friend, Colleague, ColleagueHistory } from './myTypes'export const colleagues = {
     current: [colleague1, colleague2, colleague3],
     former: [],
   };
